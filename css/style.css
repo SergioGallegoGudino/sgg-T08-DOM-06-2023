@@ -1,36 +1,121 @@
+@import url('https://fonts.cdnfonts.com/css/calculator');
+
 body{
     margin: 0;
 }
 
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
 }
 
 .calculadora{
-    background-color: blue;
-    width: 35vw;
-    height: 90vh;
+    width: 25vw;
+    height: 60vh;
 }
 
-.butList{
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr 1fr !important;
-    grid-template-rows: 1fr 1fr 1fr 1fr !important;
-    gap: 1vw;
+.row{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background: rgb(67,67,67);
+    background: linear-gradient(328deg, rgba(67,67,67,0.8268557422969187) 0%, rgba(183,183,183,1) 100%);
+    border-radius: 5px;
+    margin: 10px !important;
+}
+
+.butList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
 .calcBtn{
-    background-color: red;
-    width: 7vw;
-    height: 15vh;
+    background-color: rgb(73, 73, 73);
+    color: white;
+    font-size: 3vw;
+}
+
+.calcBtn:active{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-size: 3vw;
+}
+
+#pantalla { 
+    color: white;
+    justify-content: right;
+    padding-right: 15px;
+    font-size: 3vw;
+    font-family: 'Calculator', sans-serif;
+    grid-area: 1 / 1 / 2 / 5; 
+}
+
+#but1 { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+#but2 { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+#but3 { 
+    grid-area: 2 / 3 / 3 / 4; 
+}
+
+#but4 { 
+    grid-area: 2 / 4 / 3 / 5; 
+}
+
+#but5 { 
+    grid-area: 3 / 4 / 4 / 5; 
+}
+
+#but6 { 
+    grid-area: 3 / 3 / 4 / 4; 
+}
+
+#but7 { 
+    grid-area: 3 / 2 / 4 / 3; 
+}
+
+#but8 { 
+    grid-area: 3 / 1 / 4 / 2; 
+}
+
+#but9 { 
+    grid-area: 4 / 1 / 5 / 2; 
+}
+
+#but10 { 
+    grid-area: 4 / 2 / 5 / 3; 
+}
+
+#but11 { 
+    grid-area: 4 / 3 / 5 / 4; 
+}
+
+#but12 { 
+    grid-area: 4 / 4 / 5 / 5; 
+}
+
+#but13 { 
+    grid-area: 5 / 4 / 6 / 5; 
+}
+
+#but14 { 
+    grid-area: 5 / 3 / 6 / 4; 
+}
+
+#but15 { 
+    grid-area: 5 / 2 / 6 / 3; 
+}
+
+#but16 { 
+    grid-area: 5 / 1 / 6 / 2; 
 }
 
 .screen{
-    width: 90vw;
-    height: 10vh;
     background-color: black;
 }
